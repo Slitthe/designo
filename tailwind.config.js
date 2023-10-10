@@ -15,9 +15,28 @@ module.exports = {
       "light-faded": "#f1f3f5",
       black: "#000",
     },
-    screens: {
-      md: "768px",
+
+    extend: {
+      margin: {
+        small: "24px",
+        standard: "40px",
+      },
+      padding: {
+        small: "24px",
+        standard: "40px",
+      },
+      screens: {
+        md: "768px",
+      },
+
+      gridTemplateColumns: {
+        infoCard: "auto auto",
+      },
+      borderRadius: {
+        standard: "15px",
+      },
     },
   },
+
   plugins: [],
 };

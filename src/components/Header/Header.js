@@ -24,7 +24,7 @@ function Header({ children }) {
   return (
     <>
       <div ref={headerRef} className="flex justify-center">
-        <nav className="bg-light px-[24px] md:pl-[39px] md:pr-[0px] md:max-w-[1100px] flex flex-wrap top-0 w-full h-[96px] items-center fixed z-10">
+        <nav className="bg-light md:max-w-[1100px] flex flex-wrap top-0 w-full h-[96px] items-center fixed z-30 px-[24px] md:px-[40px]">
           <Link
             href="/"
             className="flex items-center text-dark-faded hover:text-primary-dark"
@@ -39,7 +39,7 @@ function Header({ children }) {
             </div>
           </Link>
 
-          <div className="uppercase hidden md:flex ml-auto mr-[42px] gap-[42px] text-dark-faded text-[14px] font-normal leading-[14px] tracking-[2px]">
+          <div className="uppercase hidden md:flex ml-auto gap-[42px] text-dark-faded text-[14px] font-normal leading-[14px] tracking-[2px]">
             <Link
               className={`hover:text-primary-dark${
                 router.pathname === "/about" ? " text-primary-dark" : ""
@@ -102,7 +102,7 @@ function Header({ children }) {
         </nav>
       </div>
       {isOpen && (
-        <div className="md:hidden fixed inset-0 bg-black opacity-50 top-[96px]"></div>
+        <div className="z-20 md:hidden fixed inset-0 bg-black opacity-50 top-[96px]"></div>
       )}
     </>
   );

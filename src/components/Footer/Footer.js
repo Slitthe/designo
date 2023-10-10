@@ -10,12 +10,12 @@ import Link from "next/link";
 function Footer({ isOverlapped = true }) {
   return (
     <div
-      className={`pb-[60px] md:pb-[70px] px-[39px] w-full bg-dark items-center flex flex-col${
+      className={` pb-[60px] md:pb-[70px] w-full bg-dark items-center flex flex-col${
         isOverlapped ? " mt-[-190px] md:mt-[-80px] lg:mt-[-74px]" : ""
       }`}
     >
-      <di
-        className={`md:flex w-full max-w-[1111px]${
+      <div
+        className={`px-[24px] md:px-[40px] md:flex w-full max-w-[1100px]${
           isOverlapped
             ? " mt-[190px] pt-[64px] md:mt-[80px] md:pt-[80px] lg:mt-[74px] lg:pt-[74px]"
             : ""
@@ -48,11 +48,11 @@ function Footer({ isOverlapped = true }) {
             Contact
           </Link>
         </nav>
-      </di>
+      </div>
 
-      <div className="hidden md:block md:w-full bg-light opacity-10 h-[1px] mb-[31px] mt-[41px] max-w-[1111px]"></div>
+      <div className="px-[24px] md:px-[40px] hidden md:block md:w-full bg-light opacity-10 h-[1px] mb-[31px] mt-[41px] max-w-[1100px]"></div>
 
-      <div className="w-full flex text-light text-[16px] leading-[26px] flex-col md:flex-row text-center md:text-left mt-[40px] md:mt-0 max-w-[1111px]">
+      <div className="px-[24px] md:px-[40px] w-full flex text-light text-[16px] leading-[26px] flex-col md:flex-row text-center md:text-left mt-[40px] md:mt-0 max-w-[1100px]">
         <div className="font-normal mb-[40px] md:mb-0 opacity-50 md:w-[223px] lg:w-[450px] md:mr-[10px]">
           <div className="font-bold">Designo Central Office</div>
           <div>3886 Wellington Street</div>
