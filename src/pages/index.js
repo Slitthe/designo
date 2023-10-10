@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import webDesignImg from "../../public/image-web-design-large.jpg";
 import Button from "@/components/Button/Button";
+import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +27,7 @@ export default function Home() {
       <br />
       <br />
       <br />
+      <ProjectCard imgSrc={webDesignImg.src}>Web Design</ProjectCard>
       <br />
       <br />
       <br />

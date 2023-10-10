@@ -6,9 +6,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <>
+      <div className="mt-[96px]">
         <Component {...pageProps} />
-      </>
+      </div>
       <Footer />
     </>
   );

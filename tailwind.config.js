@@ -15,6 +15,9 @@ module.exports = {
       "light-faded": "#f1f3f5",
       black: "#000",
     },
+    screens: {
+      md: "768px",
+    },
   },
   plugins: [],
 };
