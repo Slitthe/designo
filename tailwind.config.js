@@ -9,6 +9,7 @@ module.exports = {
     colors: {
       "primary-dark": "#E7816B",
       "primary-faded": "#FFAD9B",
+      "primary-light": "#FDF3F0",
       dark: "#1d1c1e",
       "dark-faded": "#333136",
       light: "#fff",
@@ -35,6 +36,9 @@ module.exports = {
       borderRadius: {
         standard: "15px",
       },
+      gap: {
+        standard: "24px"
+      }
     },
   },
 
