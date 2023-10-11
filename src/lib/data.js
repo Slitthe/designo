@@ -1,4 +1,6 @@
-import webDesignCardImg from "../../public/web-design/image-web-design-small.jpg";
+import webDesignCardMobileImg from "../../public/web-design/card-mobile.jpg";
+import webDesignCardTabletImg from "../../public/web-design/card-tablet.jpg";
+import webDesignCardDesktopImg from "../../public/web-design/card-desktop.jpg";
 import expressImg from "../../public/web-design/image-express.jpg";
 import transferImg from "../../public/web-design/image-transfer.jpg";
 import photonImg from "../../public/web-design/image-photon.jpg";
@@ -6,14 +8,18 @@ import builderImg from "../../public/web-design/image-builder.jpg";
 import blogrImg from "../../public/web-design/image-blogr.jpg";
 import campImg from "../../public/web-design/image-camp.jpg";
 
-import appDesignCardImg from "../../public/app-design/image-app-design.jpg";
+import appDesignCardMobileImg from "../../public/app-design/card-mobile.jpg";
+import appDesignCardTabletImg from "../../public/app-design/card-tablet.jpg";
+import appDesignCardDesktopImg from "../../public/app-design/card-desktop.jpg";
 import airfilterImg from "../../public/app-design/image-airfilter.jpg";
 import eyecamImg from "../../public/app-design/image-eyecam.jpg";
 import faceitImg from "../../public/app-design/image-faceit.jpg";
 import loopstudiosImg from "../../public/app-design/image-loopstudios.jpg";
 import todoImg from "../../public/app-design/image-todo.jpg";
 
-import graphicDesignCardImg from "../../public/graphic-design/image-graphic-design.jpg";
+import graphicDesignCardMobileImg from "../../public/graphic-design/card-mobile.jpg";
+import graphicDesignCardTabletImg from "../../public/graphic-design/card-tablet.jpg";
+import graphicDesignCardDesktopImg from "../../public/graphic-design/card-desktop.jpg";
 import boxedWaterImg from "../../public/graphic-design/image-boxed-water.jpg";
 import changeImg from "../../public/graphic-design/image-change.jpg";
 import scienceImg from "../../public/graphic-design/image-science.jpg";
@@ -28,7 +34,11 @@ export const projects = [
     name: "Web Design",
     description:
       "We build websites that serve as powerful marketing tools and bring memorable brand experiences..",
-    iconSrc: webDesignCardImg.src,
+    imgSources: {
+      mobile: webDesignCardMobileImg.src,
+      tablet: webDesignCardTabletImg.src,
+      desktop: webDesignCardDesktopImg.src,
+    },
     projectSamples: [
       {
         imgSrc: expressImg.src,
@@ -73,7 +83,11 @@ export const projects = [
     name: "App Design",
     description:
       "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
-    iconSrc: appDesignCardImg.src,
+    imgSources: {
+      mobile: appDesignCardMobileImg.src,
+      tablet: appDesignCardTabletImg.src,
+      desktop: appDesignCardDesktopImg.src,
+    },
     projectSamples: [
       {
         imgSrc: airfilterImg.src,
@@ -111,7 +125,11 @@ export const projects = [
     name: "Graphic Design",
     description:
       "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
-    iconSrc: graphicDesignCardImg.src,
+    imgSources: {
+      mobile: graphicDesignCardMobileImg.src,
+      tablet: graphicDesignCardTabletImg.src,
+      desktop: graphicDesignCardDesktopImg.src,
+    },
     projectSamples: [
       {
         imgSrc: changeImg.src,

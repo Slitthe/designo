@@ -1,12 +1,15 @@
 import React from "react";
 import Button from "@/components/Button/Button";
-import mobileHero from "../../../public/hero.png";
+import mobileHero from "../../../public/hero_cut.png";
+import classes from "./HomeHeaderCard.module.css";
 
 function HomeHeaderCard() {
   return (
-    <div className="md:m-standard bg-primary-dark px-standard text-center mb-[120px] pt-[80px] md:mt-[60px] md:rounded-standard lg:grid lg:grid-cols-2">
+    <div
+      className={`${classes.root} md:m-standard px-small text-center mb-[120px] pt-[80px] md:mt-[60px] md:rounded-standard lg:grid lg:grid-cols-2`}
+    >
       <div className="lg:text-left md:mx-[58px]">
-        <div className="mb-[24px] text-light text-[32px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px] pb-[14px]">
+        <div className="mb-[24px] text-light text-[32px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px]">
           Award-winning custom designs and digital branding solutions
         </div>
         <div className="text-light text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] pb-[24px] md:mx-[58px] lg:mx-0">
@@ -20,7 +23,7 @@ function HomeHeaderCard() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-[80px] drop-shadow-homeImg">
         <img src={mobileHero.src} alt={"TODO: CHANG ME"} />
       </div>
     </div>

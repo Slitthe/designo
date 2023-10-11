@@ -5,6 +5,7 @@ import TwitterIcon from "../../../public/icon-twitter.svg";
 import PinterestIcon from "../../../public/icon-pinterest.svg";
 import InstagramIcon from "../../../public/icon-instagram.svg";
 import Link from "next/link";
+import logoLight from "../../../public/logo-light.png";
 
 // 64 190
 function Footer({ isOverlapped = true }) {
@@ -24,17 +25,18 @@ function Footer({ isOverlapped = true }) {
             href="/"
             className="flex items-center text-light hover:text-primary-dark"
           >
-            <img
-              className="mr-[16px]"
-              src={"/header_icon.png"}
-              alt={"Header image, semi-filled circle"}
-            />
-            <div className="tracking-[5px] uppercase font-bold text-[24px] ">
-              Designo
-            </div>
+            <img src={logoLight.src} className="h-[24px]" />
+            {/*<img*/}
+            {/*  className="mr-[16px]"*/}
+            {/*  src={"/header_icon.png"}*/}
+            {/*  alt={"Header image, semi-filled circle"}*/}
+            {/*/>*/}
+            {/*<div className="tracking-[5px] uppercase font-bold text-[24px] ">*/}
+            {/*  Designo*/}
+            {/*</div>*/}
           </Link>
         </div>
-        <div className="md:hidden mx-[24px] bg-light opacity-10 h-[1px] my-[32px]"></div>
+        <div className="md:hidden bg-light opacity-10 h-[1px] my-[32px]"></div>
         <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] lg:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
           <Link href={"/about"} className="hover:text-primary-dark">
             Our company

@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
         </div>
         <form className="flex flex-col gap-[20px]">
-          <label className="block text-[15px] font-[500] leading-[26px] relative">
+          <label className="cursor-text block text-[15px] font-[500] leading-[26px] relative">
             {focusedInput === "name" ||
               (formValues.name === "" && (
                 <div className="text-lightHalfTransparent absolute left-[16px] bottom-[15px]">
@@ -59,7 +59,7 @@ export default function Contact() {
               className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-b-[1px] border-lightHalfTransparent text-light focus:border-light"
             />
           </label>
-          <label className="block text-[15px] font-[500] leading-[26px] relative">
+          <label className="cursor-text block text-[15px] font-[500] leading-[26px] relative">
             {focusedInput === "email" ||
               (formValues.email === "" && (
                 <div className="text-lightHalfTransparent absolute left-[16px] bottom-[15px]">
@@ -78,7 +78,7 @@ export default function Contact() {
             />
           </label>
 
-          <label className="block text-[15px] font-[500] leading-[26px] relative">
+          <label className="cursor-text block text-[15px] font-[500] leading-[26px] relative">
             {focusedInput === "phone" ||
               (formValues.phone === "" && (
                 <div className="text-lightHalfTransparent absolute left-[16px] bottom-[15px]">
@@ -97,7 +97,7 @@ export default function Contact() {
             />
           </label>
 
-          <label className="block text-[15px] font-[500] leading-[26px] relative">
+          <label className="cursor-text block text-[15px] font-[500] leading-[26px] relative">
             {focusedInput === "message" ||
               (formValues.message === "" && (
                 <div className="text-lightHalfTransparent absolute left-[16px] top-0">

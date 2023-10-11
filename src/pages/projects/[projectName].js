@@ -31,7 +31,9 @@ function ProjectPage() {
               index === 0 ? " lg:row-span-2" : ""
             }`}
           >
-            <ProjectCard imgSrc={project.iconSrc}>{project.name}</ProjectCard>
+            <ProjectCard imgSrc={project.imgSources.desktop}>
+              {project.name}
+            </ProjectCard>
           </Link>
         );
       })}

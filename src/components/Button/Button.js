@@ -2,7 +2,7 @@ import React from "react";
 
 function Button({ isDark = false, children, ...rest }) {
   const darkClasses = "text-light bg-primary-dark ";
-  const lightClasses = "text-dark bg-light hover:text-light ";
+  const lightClasses = "text-dark-faded bg-light hover:text-light ";
   return (
     <button
       {...rest}

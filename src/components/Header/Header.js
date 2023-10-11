@@ -7,6 +7,7 @@ import { useOutsideAlerter } from "@/hooks/useOutsideAlerter";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config";
 import { useMediaQueryMinWidth } from "@/hooks/useMediaQueryMinWidth";
+import logoDark from "../../../public/logo-dark.png";
 
 function Header({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,19 +25,20 @@ function Header({ children }) {
   return (
     <>
       <div ref={headerRef} className="flex justify-center">
-        <nav className="bg-light md:max-w-[1100px] flex flex-wrap top-0 w-full h-[96px] items-center fixed z-30 px-[24px] md:px-[40px]">
+        <nav className="bg-light md:max-w-container flex flex-wrap top-0 w-full h-[96px] items-center fixed z-30 px-small md:px-standard">
           <Link
             href="/"
             className="flex items-center text-dark-faded hover:text-primary-dark"
           >
-            <img
-              className="mr-[16px]"
-              src={"/header_icon.png"}
-              alt={"Header image, semi-filled circle"}
-            />
-            <div className="tracking-[5px] uppercase font-bold text-[24px] ">
-              Designo
-            </div>
+            <img src={logoDark.src} className="h-[24px]" />
+            {/*<img*/}
+            {/*  className="mr-[16px]"*/}
+            {/*  src={"/header_icon.png"}*/}
+            {/*  alt={"Header image, semi-filled circle"}*/}
+            {/*/>*/}
+            {/*<div className="tracking-[5px] uppercase font-bold text-[24px] ">*/}
+            {/*  Designo*/}
+            {/*</div>*/}
           </Link>
 
           <div className="uppercase hidden md:flex ml-auto gap-[42px] text-dark-faded text-[14px] font-normal leading-[14px] tracking-[2px]">
@@ -72,7 +74,7 @@ function Header({ children }) {
             {isOpen ? <HamburgerCloseIcon /> : <HamburgerOpenIcon />}
           </div>
           {isOpen && (
-            <div className="md:hidden flex gap-[32px] flex-col w-full fixed left-0 top-[96px] bg-dark py-[48px] px-[24px] text-[24px] uppercase text-light font-normal leading-[25px] tracking-[2px]">
+            <div className="md:hidden flex gap-[32px] flex-col w-full fixed left-0 top-[96px] bg-dark py-[48px] px-small text-[24px] uppercase text-light font-normal leading-[25px] tracking-[2px]">
               <Link
                 className={`hover:text-primary-dark${
                   router.pathname === "/about" ? " text-primary-dark" : ""

@@ -1,7 +1,9 @@
 import { Inter } from "next/font/google";
 import webDesignImg from "../../public/web-design/image-web-design-small.jpg";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
-import InfoCardImg from "../../public/illustration-resourceful.svg";
+import ResourcefulInfoCardImg from "../../public/illustration-resourceful.svg";
+import FriendlyInfoCardImg from "../../public/illustration-friendly.svg";
+import PassionateInfoCardImg from "../../public/illustration-passionate.svg";
 import InfoCard from "@/components/InfoCard/InfoCard";
 import FooterCard from "@/components/FooterCard/FooterCard";
 import HomeHeaderCard from "@/components/HomeHeaderCard/HomeHeaderCard";
@@ -22,7 +24,9 @@ export default function Home() {
               index === 0 ? " lg:row-span-2 lg:h-full" : ""
             }`}
           >
-            <ProjectCard imgSrc={project.iconSrc}>{project.name}</ProjectCard>
+            <ProjectCard imgSrc={project.imgSources}>
+              {project.name}
+            </ProjectCard>
           </Link>
         );
       })}
@@ -32,24 +36,24 @@ export default function Home() {
   const infoCards = (
     <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]">
       <div className="mb-[80px] md:mb-[32px]">
-        <InfoCard img={<InfoCardImg />} title="passionate">
+        <InfoCard img={<PassionateInfoCardImg />} title="PASSIONATE">
           Each project starts with an in-depth brand research to ensure we only
           create products that serve a purpose. We merge art, design, and
           technology into exciting new solutions.
         </InfoCard>
       </div>
       <div className="mb-[80px] md:mb-[32px]">
-        <InfoCard img={<InfoCardImg />} title="passionate">
-          Each project starts with an in-depth brand research to ensure we only
-          create products that serve a purpose. We merge art, design, and
-          technology into exciting new solutions.
+        <InfoCard img={<ResourcefulInfoCardImg />} title="RESOURCEFUL">
+          Everything that we do has a strategic purpose. We use an agile
+          approach in all of our projects and value customer collaboration. It
+          guarantees superior results that fulfill our clients’ needs.
         </InfoCard>
       </div>
       <div>
-        <InfoCard img={<InfoCardImg />} title="passionate">
-          Each project starts with an in-depth brand research to ensure we only
-          create products that serve a purpose. We merge art, design, and
-          technology into exciting new solutions.
+        <InfoCard img={<FriendlyInfoCardImg />} title="FRIENDLY">
+          We are a group of enthusiastic folks who know how to put people first.
+          Our success depends on our customers, and we strive to give them the
+          best experience a company can provide.
         </InfoCard>
       </div>
     </div>

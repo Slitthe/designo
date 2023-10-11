@@ -20,6 +20,10 @@ module.exports = {
     },
 
     extend: {
+      backgroundImage: {
+        smallCircle: "url('/bg-pattern-small-circle.svg')",
+        callToActionCircles: "url('/bg-pattern-call-to-action.svg')",
+      },
       margin: {
         small: "24px",
         standard: "40px",
@@ -30,6 +34,7 @@ module.exports = {
       },
       screens: {
         md: "768px",
+        lg: "1024px",
       },
 
       gridTemplateColumns: {
@@ -41,6 +46,12 @@ module.exports = {
       gap: {
         standard: "24px",
         large: "40px",
+      },
+      maxWidth: {
+        container: "1100px",
+      },
+      dropShadow: {
+        homeImg: "1px -46px 42px rgba(0,0,0,0.3)",
       },
     },
   },
