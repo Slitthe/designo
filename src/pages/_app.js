@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { useRouter } from "next/router";
 
-const pathsForNormalFooter = [];
+const pathsForNormalFooter = ["/contact"];
 export default function App({ Component, pageProps }) {
   const location = useRouter();
 

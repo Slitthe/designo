@@ -15,10 +15,8 @@ function Footer({ isOverlapped = true }) {
       }`}
     >
       <div
-        className={`px-[24px] md:px-[40px] md:flex w-full max-w-[1100px]${
-          isOverlapped
-            ? " mt-[190px] pt-[64px] md:mt-[80px] md:pt-[80px] lg:mt-[74px] lg:pt-[74px]"
-            : ""
+        className={`pt-[64px] md:pt-[80px] lg:pt-[74px] px-[24px] md:px-[40px] md:flex w-full max-w-[1100px]${
+          isOverlapped ? " mt-[190px]  md:mt-[80px]  lg:mt-[74px] " : ""
         }`}
       >
         <div className={`flex justify-center${isOverlapped ? " " : ""}`}>

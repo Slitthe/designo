@@ -13,8 +13,10 @@ module.exports = {
       dark: "#1d1c1e",
       "dark-faded": "#333136",
       light: "#fff",
+      lightHalfTransparent: "rgb(255, 255, 255, 0.5)",
       "light-faded": "#f1f3f5",
       black: "#000",
+      transparent: "transparent",
     },
 
     extend: {

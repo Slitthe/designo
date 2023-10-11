@@ -3,64 +3,9 @@ import FooterCard from "@/components/FooterCard/FooterCard";
 import aboutHeroImg from "../../../public/image-about-hero.jpg";
 import HeaderCard from "@/components/HeaderCard/HeaderCard";
 import React from "react";
-import InfoCard from "@/components/InfoCard/InfoCard";
-import InfoCardImg from "../../../public/illustration-resourceful.svg";
-import Button from "@/components/Button/Button";
+import LocationInfoCards from "@/components/LocationInfoCards/LocationInfoCards";
 
 export default function About() {
-  const infoCards = (
-    <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]">
-      <div className="mb-[80px]">
-        <div className="flex flex-col items-center lg:flex">
-          <div className="w-[202px] h-[202px] row-span-2">
-            <InfoCardImg />
-          </div>
-
-          <div className="md:ml-[18px] text-center md:text-left lg:text-center ">
-            <div className="mb-[32px] md:mb-[16px] lg:mb-[32px] mt-[48px] md:mt-[40px] lg:mt-[48px] text-dark-faded text-[20px] font-[500] tracking-[5px] leading-[26px] uppercase">
-              passionate
-            </div>
-            <div className="text-[16px] font-normal leading-[26px]">
-              <Button isDark>Test</Button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mb-[80px]">
-        <div className="flex flex-col items-center lg:flex">
-          <div className="w-[202px] h-[202px] row-span-2">
-            <InfoCardImg />
-          </div>
-
-          <div className="md:ml-[18px] text-center md:text-left lg:text-center ">
-            <div className="mb-[32px] md:mb-[16px] lg:mb-[32px] mt-[48px] md:mt-[40px] lg:mt-[48px] text-dark-faded text-[20px] font-[500] tracking-[5px] leading-[26px] uppercase">
-              passionate
-            </div>
-            <div className="text-[16px] font-normal leading-[26px]">
-              <Button isDark>Test</Button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mb-[80px]">
-        <div className="flex flex-col items-center lg:flex">
-          <div className="w-[202px] h-[202px] row-span-2">
-            <InfoCardImg />
-          </div>
-
-          <div className="md:ml-[18px] text-center md:text-left lg:text-center ">
-            <div className="mb-[32px] md:mb-[16px] lg:mb-[32px] mt-[48px] md:mt-[40px] lg:mt-[48px] text-dark-faded text-[20px] font-[500] tracking-[5px] leading-[26px] uppercase">
-              passionate
-            </div>
-            <div className="text-[16px] font-normal leading-[26px]">
-              <Button isDark>Test</Button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
   return (
     <div className="max-w-[1111px] mx-auto relative overflow-hidden">
       <HeaderCard title={"About Us"} imageSrc={aboutHeroImg.src}>
@@ -98,7 +43,7 @@ export default function About() {
         </div>
       </div>
 
-      {infoCards}
+      <LocationInfoCards />
 
       <div
         className={`bg-primary-light mb-[120px] md:mx-standard md:rounded-standard text-center overflow-hidden lg:grid lg:grid-cols-5 md:mt-[120px] lg:text-left lg:min-h-[640px]`}
