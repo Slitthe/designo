@@ -45,7 +45,7 @@ function ProjectPage() {
       </HeaderCard>
 
       <div
-        className={`${classes.projectsWrapper} mb-[96px] flex flex-col gap-[40px] mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]`}
+        className={`${classes.projectsWrapper} mt-[120px] mb-[96px] flex flex-col gap-[40px] mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]`}
       >
         {currentProject.projectSamples.map((sample) => {
           return (
