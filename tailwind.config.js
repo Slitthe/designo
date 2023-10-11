@@ -37,8 +37,9 @@ module.exports = {
         standard: "15px",
       },
       gap: {
-        standard: "24px"
-      }
+        standard: "24px",
+        large: "40px",
+      },
     },
   },
 
