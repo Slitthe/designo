@@ -11,7 +11,7 @@ import logoLight from "../../../public/logo-light.png";
 function Footer({ isOverlapped = true }) {
   return (
     <div
-      className={` pb-[60px] md:pb-[70px] w-full bg-dark items-center flex flex-col${
+      className={` pb-[60px] md:pb-[80px] w-full bg-dark items-center flex flex-col${
         isOverlapped ? " mt-[-190px] md:mt-[-80px] lg:mt-[-74px]" : ""
       }`}
     >
@@ -37,7 +37,7 @@ function Footer({ isOverlapped = true }) {
           </Link>
         </div>
         <div className="md:hidden bg-light opacity-10 h-[1px] my-[32px]"></div>
-        <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] lg:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
+        <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] md:gap-[42px] lg:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
           <Link href={"/about"} className="hover:text-primary-dark">
             Our company
           </Link>
@@ -50,7 +50,7 @@ function Footer({ isOverlapped = true }) {
         </nav>
       </div>
 
-      <div className="px-[24px] md:px-[40px] hidden md:block md:w-full bg-light opacity-10 h-[1px] mb-[31px] mt-[41px] max-w-[1100px]"></div>
+      <div className="px-[24px] md:px-[40px] hidden md:block self-stretch opacity-10 bg-light h-[1px] mx-standard mb-[31px] mt-[41px] max-w-[1100px]"></div>
 
       <div className="px-[24px] md:px-[40px] w-full flex text-light text-[16px] leading-[26px] flex-col md:flex-row text-center md:text-left mt-[40px] md:mt-0 max-w-[1100px]">
         <div className="font-normal mb-[40px] md:mb-0 opacity-50 md:w-[223px] lg:w-[450px] md:mr-[10px]">

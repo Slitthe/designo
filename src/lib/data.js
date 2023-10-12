@@ -156,6 +156,7 @@ export const locations = [
   {
     name: "Canada",
     locationImgSrc: canadaImg.src,
+    illustrationSrc: "/illustration-canada.svg",
     address: {
       name: "Designo Central Office",
       street: "3886 Wellington",
@@ -169,6 +170,8 @@ export const locations = [
   {
     name: "Australia",
     locationImgSrc: australiaImg.src,
+    illustrationSrc: "/illustration-australia.svg",
+
     address: {
       name: "Designo AU Office",
       street: "19 Balonne Street",
@@ -182,6 +185,8 @@ export const locations = [
   {
     name: "United Kingdom",
     locationImgSrc: ukImg.src,
+    illustrationSrc: "/illustration-united-kingdom.svg",
+
     address: {
       name: "Designo UK Office",
       street: "13 Colorado Way",

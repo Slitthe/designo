@@ -23,6 +23,7 @@ module.exports = {
       backgroundImage: {
         smallCircle: "url('/bg-pattern-small-circle.svg')",
         callToActionCircles: "url('/bg-pattern-call-to-action.svg')",
+        heroCircle: 'url("/bg-pattern-hero-home.svg")',
       },
       margin: {
         small: "24px",
@@ -52,6 +53,11 @@ module.exports = {
       },
       dropShadow: {
         homeImg: "1px -46px 42px rgba(0,0,0,0.3)",
+      },
+      boxShadow: {
+        input: "0 1px 0px 0px #fff",
+        inputFocused:
+          "0 1px 0px 0px #fff, 0 2px 0px 0px #fff ,0 3px 0px 0px #fff",
       },
     },
   },

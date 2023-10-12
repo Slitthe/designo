@@ -35,7 +35,7 @@ export default function Home() {
 
   const infoCards = (
     <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]">
-      <div className="mb-[80px] md:mb-[32px]">
+      <div className="mb-[80px] md:mb-[24px]">
         <InfoCard img={<PassionateInfoCardImg />} title="PASSIONATE">
           Each project starts with an in-depth brand research to ensure we only
           create products that serve a purpose. We merge art, design, and
@@ -63,7 +63,9 @@ export default function Home() {
       <HomeHeaderCard />
       {projectCards}
       {infoCards}
-      <FooterCard />
+      <div className="mt-[120px] md:mt-[68px]">
+        <FooterCard />
+      </div>
     </main>
   );
 }

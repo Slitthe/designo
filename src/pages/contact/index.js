@@ -1,6 +1,7 @@
 import LocationInfoCards from "@/components/LocationInfoCards/LocationInfoCards";
 import { useState } from "react";
 import Button from "@/components/Button/Button";
+import ErrorIcon from "../../../public/icon-error.svg";
 
 export default function Contact() {
   const [formValues, setFormValues] = useState({
@@ -27,10 +28,10 @@ export default function Contact() {
     setFocusedInput(null);
   };
   return (
-    <div className="max-w-[1111px] mx-auto relative overflow-hidden">
-      <div className="mb-[120px] py-[72px] px-standard lg:px-[96px] bg-primary-dark flex flex-col gap-[48px] lg:grid lg:grid-cols-2 lg:gap-[96px]">
+    <div className="max-w-[1111px] mx-auto relative overflow-hidden mb-[120px]">
+      <div className="rounded-standard mx-standard md:px-[60px] mt-[60px] mb-[120px] py-[72px] lg:px-[96px] bg-primary-dark flex flex-col gap-[40px] lg:grid lg:grid-cols-2 lg:gap-[96px]">
         <div className="lg:flex lg:flex-col items-center justify-center text-center md:text-left">
-          <div className="lg:p-0 text-light text-[32px] mb-[24px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px] w-full">
+          <div className="lg:p-0 text-light text-[32px] mb-[24px] md:mb-[32px] md:text-[48px] md:leading-[48px] font-[500] leading-[36px] w-full">
             Contact Us
           </div>
           <div className="text-light text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px]">
@@ -56,7 +57,7 @@ export default function Contact() {
               value={formValues.name}
               type="text"
               name="name"
-              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-b-[1px] border-lightHalfTransparent text-light focus:border-light"
+              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-lightHalfTransparent text-light shadow-input focus:shadow-inputFocused"
             />
           </label>
           <label className="cursor-text block text-[15px] font-[500] leading-[26px] relative">
@@ -67,6 +68,13 @@ export default function Contact() {
                 </div>
               ))}
 
+            <div className="flex items-center gap-[9px] absolute right-[8px] bottom-[15px]">
+              <div className="text-[12px] italic text-light font-[400] leading-[26px] ">
+                Can’t be empty
+              </div>
+              <ErrorIcon />
+            </div>
+
             <input
               onFocus={onFocus}
               onChange={onChange}
@@ -74,7 +82,7 @@ export default function Contact() {
               value={formValues.email}
               type="text"
               name="email"
-              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-b-[1px] border-lightHalfTransparent text-light focus:border-light"
+              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-lightHalfTransparent text-light shadow-input focus:shadow-inputFocused"
             />
           </label>
 
@@ -93,7 +101,7 @@ export default function Contact() {
               value={formValues.phone}
               type="text"
               name="phone"
-              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-b-[1px] border-lightHalfTransparent text-light focus:border-light"
+              className="pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-lightHalfTransparent text-light shadow-input focus:shadow-inputFocused"
             />
           </label>
 
@@ -111,7 +119,7 @@ export default function Contact() {
               onBlur={clearFocus}
               value={formValues.message}
               name="message"
-              className="resize-none pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-b-[1px] border-lightHalfTransparent text-light focus:border-light"
+              className="resize-none pb-[14px] px-[16px] w-full bg-transparent focus-visible:outline-none border-lightHalfTransparent text-light shadow-input focus:shadow-inputFocused"
             />
           </label>
 

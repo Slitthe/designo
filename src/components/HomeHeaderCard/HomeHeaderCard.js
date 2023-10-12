@@ -6,10 +6,10 @@ import classes from "./HomeHeaderCard.module.css";
 function HomeHeaderCard() {
   return (
     <div
-      className={`${classes.root} md:m-standard px-small text-center mb-[120px] pt-[80px] md:mt-[60px] md:rounded-standard lg:grid lg:grid-cols-2`}
+      className={`${classes.root} md:m-standard px-small md:px-[60px] text-center mb-[120px] pt-[80px] md:pt-[60px] md:mt-[60px] md:rounded-standard lg:grid lg:grid-cols-2`}
     >
-      <div className="lg:text-left md:mx-[58px]">
-        <div className="mb-[24px] text-light text-[32px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px]">
+      <div className="lg:text-left">
+        <div className="mb-[24px] md:mb-[8px] text-light text-[32px] md:text-[48px] md:leading-[48px] font-[500] leading-[36px]">
           Award-winning custom designs and digital branding solutions
         </div>
         <div className="text-light text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] pb-[24px] md:mx-[58px] lg:mx-0">
@@ -23,7 +23,7 @@ function HomeHeaderCard() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-[80px] drop-shadow-homeImg">
+      <div className="flex justify-center mt-[80px] md:mt-[64px] drop-shadow-homeImg">
         <img src={mobileHero.src} alt={"TODO: CHANG ME"} />
       </div>
     </div>
