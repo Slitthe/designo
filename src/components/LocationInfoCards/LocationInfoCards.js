@@ -6,12 +6,14 @@ import Link from "next/link";
 
 function LocationInfoCards(props) {
   return (
-    <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]">
+    <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px] mb-[120px] lg:mb-[160px]">
       {locations.map((location, index, array) => {
         console.log({ location });
         return (
           <div
-            className={`${index !== array.length - 1 ? "mb-[80px]" : ""}`}
+            className={`${
+              index !== array.length - 1 ? "mb-[80px] lg:mb-0" : ""
+            }`}
             key={location.name}
           >
             <div className="flex flex-col items-center lg:flex">

@@ -47,7 +47,7 @@ function ProjectPage() {
       </HeaderCard>
 
       <div
-        className={`mt-[120px] mb-[96px] md:mb-[110px] flex flex-col gap-[40px] md:gap-[32px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]`}
+        className={`mt-[120px] lg:mt-[160px] mb-[96px] md:mb-[110px] lg:mb-[160px] flex flex-col gap-[40px] md:gap-[32px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px]`}
       >
         {currentProject.projectSamples.map((sample) => {
           return (
@@ -57,10 +57,10 @@ function ProjectPage() {
             >
               <img
                 src={sample.imgSrc}
-                className="object-cover w-full h-[320px] md:h-full"
+                className="object-cover w-full min-h-[320px] md:h-full"
               />
               <div
-                className={`${classes.infoSection} min-h-[160px] text-center bg-primary-light flex flex-col gap-[16px] py-[32px] px-[30px] md:flex md:flex-col md:justify-center md:py-[41px] md:h-[310px]`}
+                className={`${classes.infoSection} min-h-[160px] text-center bg-primary-light flex flex-col gap-[16px] py-[32px] px-[30px] md:flex md:flex-col md:justify-center md:py-[41px] lg:pt-[30px] md:h-[310px]`}
               >
                 <div
                   className={`${classes.title} text-primary-dark text-[20px] font-[500] leading-[26px] tracking-[5px] uppercase`}

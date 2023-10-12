@@ -37,6 +37,7 @@ function Footer({ isOverlapped = true }) {
           </Link>
         </div>
         <div className="md:hidden bg-light opacity-10 h-[1px] my-[32px]"></div>
+
         <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] md:gap-[42px] lg:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
           <Link href={"/about"} className="hover:text-primary-dark">
             Our company

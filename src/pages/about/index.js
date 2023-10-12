@@ -43,9 +43,9 @@ export default function About() {
       </HeaderCard>
 
       <div
-        className={`bg-primary-light mb-[120px] md:mx-standard md:rounded-standard text-center overflow-hidden lg:grid lg:grid-cols-5 md:mt-[120px] lg:text-left lg:min-h-[640px]`}
+        className={`bg-primary-light mb-[120px] lg:mb-[160px] md:mx-standard md:rounded-standard text-center overflow-hidden lg:grid lg:grid-cols-10 md:mt-[120px] lg:mt-[160px] lg:text-left lg:min-h-[640px]`}
       >
-        <div className="h-[325px] lg:col-span-2 lg:h-full relative">
+        <div className="h-[325px] lg:col-span-4 lg:h-full relative">
           <picture className="w-full h-full absolute inset-0 object-cover">
             <source media={`(min-width:${lg})`} srcSet={talentImgDesktop.src} />
             <source media={`(min-width:${md})`} srcSet={talentImgTablet.src} />
@@ -55,8 +55,8 @@ export default function About() {
             />
           </picture>
         </div>
-        <div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-3">
-          <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px] md:px-[119px] w-full">
+        <div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6 lg:py-[154px] lg:mx-[96px]">
+          <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
             World-class talent
           </div>
           <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">
@@ -79,9 +79,9 @@ export default function About() {
       <LocationInfoCards />
 
       <div
-        className={`bg-primary-light mb-[120px] md:mx-standard md:rounded-standard text-center overflow-hidden lg:grid lg:grid-cols-5 md:mt-[120px] lg:text-left lg:min-h-[640px]`}
+        className={`bg-primary-light my-[120px] md:mx-standard md:rounded-standard text-center overflow-hidden lg:grid lg:grid-cols-10 md:mt-[120px] lg:mt-[160px] lg:text-left lg:min-h-[640px]`}
       >
-        <div className="h-[325px] lg:col-span-2 lg:h-full relative">
+        <div className="h-[325px] lg:col-span-4 lg:h-full relative order-2">
           <picture className="w-full h-full absolute inset-0 object-cover">
             <source
               media={`(min-width:${lg})`}
@@ -97,8 +97,8 @@ export default function About() {
             />
           </picture>
         </div>
-        <div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-3">
-          <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px] md:px-[119px] w-full">
+        <div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6 lg:py-[154px] lg:mx-[96px]">
+          <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
             The real deal
           </div>
           <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">
@@ -115,6 +115,24 @@ export default function About() {
             take action and drive real results.
           </div>
         </div>
+        {/*<div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6">*/}
+        {/*  <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">*/}
+        {/*    The real deal*/}
+        {/*  </div>*/}
+        {/*  <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">*/}
+        {/*    As strategic partners in our clients’ businesses, we are ready to*/}
+        {/*    take on any challenge as our own. Solving real problems require*/}
+        {/*    empathy and collaboration, and we strive to bring a fresh*/}
+        {/*    perspective to every opportunity. We make design and technology more*/}
+        {/*    accessible and give you tools to measure success.*/}
+        {/*  </div>*/}
+
+        {/*<div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px]">*/}
+        {/*  We are visual storytellers in appealing and captivating ways. By*/}
+        {/*  combining business and marketing strategies, we inspire audiences to*/}
+        {/*  take action and drive real results.*/}
+        {/*</div>*/}
+        {/*</div>*/}
       </div>
 
       <FooterCard />

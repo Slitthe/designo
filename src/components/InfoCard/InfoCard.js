@@ -2,7 +2,7 @@ import React from "react";
 
 function InfoCard({ title, children, img }) {
   return (
-    <div className="flex flex-col md:gap-[48px] items-center md:grid md:grid-cols-infoCard lg:flex">
+    <div className="flex flex-col md:gap-[48px] lg:gap-0 items-center md:grid md:grid-cols-infoCard lg:flex">
       <div className="w-[202px] h-[202px] row-span-2 bg-smallCircle bg-no-repeat">
         {img}
       </div>

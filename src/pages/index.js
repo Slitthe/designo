@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const projectCards = (
-    <div className="px-small md:px-standard flex flex-col lg:grid lg:grid-cols-2 gap-standard md:gap-[30px] mt-[120px]">
+    <div className="px-small md:px-standard flex flex-col lg:grid lg:grid-cols-2 gap-standard md:gap-[30px] lg:gap-[24px] lg:gap-x-[30px] mt-[120px] lg:mt-[160px]">
       {projects.map((project, index) => {
         return (
           <Link
