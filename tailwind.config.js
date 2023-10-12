@@ -49,7 +49,7 @@ module.exports = {
         large: "40px",
       },
       maxWidth: {
-        container: "1100px",
+        container: "calc(1111px + 80px)",
       },
       dropShadow: {
         homeImg: "1px -46px 42px rgba(0,0,0,0.3)",

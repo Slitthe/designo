@@ -1,10 +1,35 @@
 import { locations } from "@/lib/data";
 import FooterCard from "@/components/FooterCard/FooterCard";
+import { useEffect, useRef } from "react";
 
 // TODO: check if correct responsive images are used for the location cards
 export default function Locations() {
+  const mapRef = useRef(null);
+  useEffect(() => {
+    let map;
+    if (mapRef.current) {
+      console.log("asd");
+
+      // 43.6694925,-79.4265529,18.23z
+      map = L.map(mapRef.current, {
+        center: [43.6694925, -79.4265529],
+        zoom: 15,
+      });
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+      }).addTo(map);
+
+      var marker = L.marker([43.6694925, -79.4265529]).addTo(map);
+    }
+
+    return () => {
+      map.remove();
+    };
+  }, [mapRef.current]);
+
   return (
-    <div className="max-w-[1111px] mx-auto relative overflow-hidden">
+    <div className="max-w-container mx-auto relative overflow-hidden">
       <div className="flex flex-col gap-large md:gap-[120px] lg:mt-[60px] lg:gap-[32px] md:mt-[64px] md:px-standard">
         {locations.map((location, index) => {
           return (
@@ -14,10 +39,14 @@ export default function Locations() {
                   index % 2 === 0 ? " lg:order-1" : " lg:order-0"
                 }`}
               >
-                <img
-                  src={location.locationImgSrc}
-                  className="object-cover h-full w-full"
-                />
+                {index === 0 ? (
+                  <div id={"map"} ref={mapRef} className="w-full h-full"></div>
+                ) : (
+                  <img
+                    src={location.locationImgSrc}
+                    className="object-cover h-full w-full"
+                  />
+                )}
               </div>
               <div className="col-span-2 py-[80px] px-small md:py-[96px] lg:w-full md:px-[75px] lg:pl-[96px] md:text-left md:min-h-[326px] min-h-[320px] bg-primary-light text-center flex flex-col justify-center text-dark-faded text-[15px] font-[400] leading-[25px] gap-standard md:rounded-standard">
                 <div className="text-primary-dark text-[32px] font-[500] leading-[36px] md:text-[40px] md:leading-[48px]">

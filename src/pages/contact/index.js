@@ -75,7 +75,7 @@ export default function Contact() {
     validateField(event.target);
   };
   return (
-    <div className="max-w-[1111px] mx-auto relative overflow-hidden">
+    <div className="max-w-container mx-auto relative overflow-hidden">
       <div className="md:rounded-standard md:mx-standard px-small md:px-[60px] md:mt-[60px] mb-[120px] py-[72px] lg:px-[96px] bg-primary-dark flex flex-col gap-[40px] lg:grid lg:grid-cols-2 lg:gap-[96px]">
         <div className="lg:flex lg:flex-col items-center justify-center text-center md:text-left">
           <div className="lg:p-0 text-light text-[32px] mb-[24px] md:mb-[32px] md:text-[48px] md:leading-[48px] font-[500] leading-[36px] w-full">
@@ -195,6 +195,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
+
       <LocationInfoCards />
     </div>
   );

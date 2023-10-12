@@ -16,7 +16,7 @@ function Footer({ isOverlapped = true }) {
       }`}
     >
       <div
-        className={`pt-[64px] md:pt-[80px] lg:pt-[74px] px-[24px] md:px-[40px] md:flex w-full max-w-[1100px]${
+        className={`pt-[64px] md:pt-[80px] lg:pt-[74px] px-[24px] md:px-[40px] md:flex w-full max-w-container${
           isOverlapped ? " mt-[190px]  md:mt-[80px]  lg:mt-[74px] " : ""
         }`}
       >
@@ -51,9 +51,9 @@ function Footer({ isOverlapped = true }) {
         </nav>
       </div>
 
-      <div className="px-[24px] md:px-[40px] hidden md:block self-stretch opacity-10 bg-light h-[1px] mx-standard mb-[31px] mt-[41px] max-w-[1100px]"></div>
+      <div className="relative px-[24px] md:px-[40px] hidden md:block self-stretch opacity-10 mx-auto mb-[31px] mt-[41px] w-full max-w-container before:absolute before:h-[1px] before:bg-light before:left-[40px] before:right-[40px]"></div>
 
-      <div className="px-[24px] md:px-[40px] w-full flex text-light text-[16px] leading-[26px] flex-col md:flex-row text-center md:text-left mt-[40px] md:mt-0 max-w-[1100px]">
+      <div className="px-[24px] md:px-[40px] w-full flex text-light text-[16px] leading-[26px] flex-col md:flex-row text-center md:text-left mt-[40px] md:mt-0 max-w-container">
         <div className="font-normal mb-[40px] md:mb-0 opacity-50 md:w-[223px] lg:w-[450px] md:mr-[10px]">
           <div className="font-bold">Designo Central Office</div>
           <div>3886 Wellington Street</div>

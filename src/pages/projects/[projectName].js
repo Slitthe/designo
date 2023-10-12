@@ -40,7 +40,7 @@ function ProjectPage() {
   );
 
   return (
-    <div className="max-w-[1111px] mx-auto relative overflow-hidden">
+    <div className="max-w-container mx-auto relative overflow-hidden">
       <HeaderCard title={currentProject.name}>
         {currentProject.description}
       </HeaderCard>

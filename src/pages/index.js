@@ -59,7 +59,7 @@ export default function Home() {
     </div>
   );
   return (
-    <main className="max-w-[1111px] mx-auto relative overflow-hidden">
+    <main className="max-w-container mx-auto relative overflow-hidden">
       <HomeHeaderCard />
       {projectCards}
       {infoCards}
