@@ -19,7 +19,6 @@ function ProjectPage() {
     (project) => project.slug !== projectName,
   );
 
-  console.log({ classes });
   const projectCards = (
     <div className="px-small md:px-standard flex flex-col lg:grid lg:grid-cols-2 gap-standard md:gap-[30px]">
       {otherProjects.map((project, index) => {
