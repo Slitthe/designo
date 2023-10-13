@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function FooterCard() {
   return (
-    <div className="lg:mt-[160px] mx-small px-small md:px-[58px] lg:p-0 lg:mx-standard bg-primary-dark rounded-standard pb-[64px] md:mih-[350px] lg:min-h-[292px] text-center flex flex-col align-center items-center lg:grid lg:grid-cols-2 bg-callToActionCircles bg-no-repeat bg-cover">
+    <div className="lg:mt-[160px] mx-small px-small md:px-[58px] lg:p-0 lg:mx-standard bg-primary-dark rounded-standard pb-[64px] md:mih-[350px] lg:min-h-[292px] text-center flex flex-col align-center items-center lg:grid lg:grid-cols-2 bg-footerCardMobile md:bg-footerCardTablet md:bg-no-repeat md:bg-center md:bg-[75%]">
       <div className="lg:ml-[95px] lg:py-[72px] lg:h-100">
         <div className="lg:w-[298px] lg:text-left lg:p-0 mt-[64px] lg:mt-0 mb-[6px] text-light text-[32px] md:text-[40px] md:leading-[40px] font-[500] leading-[36px] md:px-[119px]">
           Let’s talk about your project

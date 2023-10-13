@@ -9,6 +9,8 @@ import FooterCard from "@/components/FooterCard/FooterCard";
 import HomeHeaderCard from "@/components/HomeHeaderCard/HomeHeaderCard";
 import { projects } from "@/lib/data";
 import Link from "next/link";
+import Head from "next/head";
+import classes from "./Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,13 +61,18 @@ export default function Home() {
     </div>
   );
   return (
-    <main className="max-w-container mx-auto relative overflow-hidden">
-      <HomeHeaderCard />
-      {projectCards}
-      {infoCards}
-      <div className="mt-[120px] md:mt-[68px]">
-        <FooterCard />
-      </div>
-    </main>
+    <div className={classes.root}>
+      <Head>
+        <title>Designo</title>
+      </Head>
+      <main className="max-w-container mx-auto relative overflow-hidden">
+        <HomeHeaderCard />
+        {projectCards}
+        {infoCards}
+        <div className="mt-[120px] md:mt-[68px]">
+          <FooterCard />
+        </div>
+      </main>
+    </div>
   );
 }

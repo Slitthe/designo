@@ -13,7 +13,7 @@ const { md, lg } = fullConfig.theme.screens;
 function HeaderCard({ title, children, imageSrcset }) {
   return (
     <div
-      className={`bg-heroCircle bg-[0 50%] bg-primary-dark md:mx-standard md:rounded-standard text-center md:mt-[60px] overflow-hidden${
+      className={`bg-primary-dark md:mx-standard md:rounded-standard text-center md:mt-[60px] overflow-hidden${
         imageSrcset ? " lg:grid lg:grid-cols-10 lg:text-left" : ""
       }`}
     >
@@ -31,9 +31,11 @@ function HeaderCard({ title, children, imageSrcset }) {
         </div>
       )}
       <div
-        className={`${
-          !imageSrcset ? "lg:mx-[190px] " : "lg:mx-[96px] lg:py-[135px] "
-        }md:mx-[70px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6`}
+        className={`md:px-[70px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small lg:col-span-6 bg-heroCircle bg-[0 50%] bg-no-repeat${
+          !imageSrcset
+            ? " lg:px-[190px] md:bg-callToActionCircles md:bg-[-25%]"
+            : " lg:px-[96px] lg:py-[135px] px-[60px]"
+        }`}
       >
         <div
           className={`lg:p-0 text-light text-[32px] mb-[24px] md:text-[48px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full${

@@ -23,7 +23,7 @@ function Header({ children }) {
 
   const toggleOpen = () => setIsOpen((prevOpen) => !prevOpen);
   return (
-    <>
+    <div className="w-full bg-light fixed z-30 left:0 right: 0 h-[96px]">
       <div ref={headerRef} className="flex justify-center">
         <nav className="bg-light md:max-w-container flex flex-wrap top-0 w-full h-[96px] items-center fixed z-30 px-small md:px-standard">
           <Link
@@ -106,7 +106,7 @@ function Header({ children }) {
       {isOpen && (
         <div className="z-20 md:hidden fixed inset-0 bg-black opacity-50 top-[96px]"></div>
       )}
-    </>
+    </div>
   );
 }
 

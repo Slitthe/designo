@@ -1,0 +1,7 @@
+
+
+@media (min-width: 1024px) {
+    .root {
+        background: url("/bg-pattern-leaf.svg") no-repeat 0 15%, url("/bg-pattern-leaf.svg") no-repeat right 75%;
+    }
+}

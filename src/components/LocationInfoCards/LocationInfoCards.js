@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function LocationInfoCards(props) {
   return (
-    <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px] mb-[120px] lg:mb-[160px]">
+    <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px] pb-[120px] lg:pb-[160px]">
       {locations.map((location, index, array) => {
         return (
           <div

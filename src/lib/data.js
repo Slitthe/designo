@@ -155,6 +155,10 @@ export const projects = [
 export const locations = [
   {
     name: "Canada",
+    coordinates: {
+      x: 43.67,
+      y: -79.44,
+    },
     locationImgSrc: canadaImg.src,
     illustrationSrc: "/illustration-canada.svg",
     address: {
@@ -171,7 +175,10 @@ export const locations = [
     name: "Australia",
     locationImgSrc: australiaImg.src,
     illustrationSrc: "/illustration-australia.svg",
-
+    coordinates: {
+      x: -35.29,
+      y: 149.14,
+    },
     address: {
       name: "Designo AU Office",
       street: "19 Balonne Street",
@@ -184,6 +191,10 @@ export const locations = [
   },
   {
     name: "United Kingdom",
+    coordinates: {
+      x: 51.62,
+      y: -3.94,
+    },
     locationImgSrc: ukImg.src,
     illustrationSrc: "/illustration-united-kingdom.svg",
 

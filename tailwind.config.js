@@ -23,7 +23,16 @@ module.exports = {
       backgroundImage: {
         smallCircle: "url('/bg-pattern-small-circle.svg')",
         callToActionCircles: "url('/bg-pattern-call-to-action.svg')",
+
+        footerCardMobile: "url('/bg-pattern-design-pages-intro-mobile.svg')",
+        footerCardTablet: "url('/bg-pattern-design-pages-intro-tablet.svg')",
+
+        twoCircles: 'url("/bg-pattern-two-circles.svg")',
+        threeCircles: 'url("/bg-pattern-three-circles.svg")',
         heroCircle: 'url("/bg-pattern-hero-home.svg")',
+        contactHeroMobile: 'url("/bg-pattern-hero-contact-mobile.svg")',
+        contactHeroTablet: 'url("/bg-pattern-hero-desktop.svg")',
+        leaf: 'url("/bg-pattern-leaf.svg")',
       },
       margin: {
         small: "24px",
