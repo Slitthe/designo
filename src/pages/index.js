@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import ResourcefulInfoCardImg from "../../public/illustration-resourceful.svg";
 import FriendlyInfoCardImg from "../../public/illustration-friendly.svg";

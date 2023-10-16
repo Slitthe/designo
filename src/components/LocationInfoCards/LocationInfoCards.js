@@ -1,10 +1,9 @@
 import React from "react";
-import InfoCardImg from "../../../public/illustration-resourceful.svg";
 import Button from "@/components/Button/Button";
 import { locations } from "@/lib/data";
 import Link from "next/link";
 
-function LocationInfoCards(props) {
+function LocationInfoCards() {
   return (
     <div className="mt-[120px] lg:mt-[160px] mx-small md:mx-standard lg:grid lg:grid-cols-3 lg:gap-[30px] pb-[120px] lg:pb-[160px]">
       {locations.map((location, index, array) => {
