@@ -5,22 +5,19 @@ import HeaderCard from "@/components/HeaderCard/HeaderCard";
 import FooterCard from "@/components/FooterCard/FooterCard";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
-import classes from "./project.module.scss";
+import classes from "./project.module.css";
 import Head from "next/head";
 
-// Generates `/posts/1` and `/posts/2`
 export async function getStaticPaths() {
   return {
     paths: projects.map((project) => {
       return { params: { projectName: project.slug } };
     }),
-    fallback: false, // can also be true or 'blocking'
+    fallback: false,
   };
 }
-// `getStaticPaths` requires using `getStaticProps`
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   return {
-    // Passed to the page component as props
     props: { projects },
   };
 }
@@ -91,11 +88,11 @@ function ProjectPage({ projects }) {
                 <div
                   className={`${classes.infoSection} min-h-[160px] text-center bg-primary-light flex flex-col gap-[16px] py-[32px] px-[30px] md:flex md:flex-col md:justify-center md:py-[41px] lg:pt-[30px] md:h-[310px]`}
                 >
-                  <div
+                  <h2
                     className={`${classes.title} text-primary-dark text-[20px] font-[500] leading-[26px] tracking-[5px] uppercase`}
                   >
                     {sample.title}
-                  </div>
+                  </h2>
                   <div
                     className={`${classes.description} text-dark-faded text-[16px] font-[400] leading-[26px]`}
                   >

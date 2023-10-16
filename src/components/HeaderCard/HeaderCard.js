@@ -1,11 +1,7 @@
 import React from "react";
-import Button from "@/components/Button/Button";
 
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config";
-import talentImgDesktop from "../../../public/about/desktop/image-world-class-talent.jpg";
-import talentImgTablet from "../../../public/about/tablet/image-world-class-talent.jpg";
-import talentImgMobile from "../../../public/about/mobile/image-world-class-talent.jpg";
 
 const fullConfig = resolveConfig(tailwindConfig);
 const { md, lg } = fullConfig.theme.screens;
@@ -37,13 +33,13 @@ function HeaderCard({ title, children, imageSrcset }) {
             : " lg:px-[96px] lg:py-[135px] px-[60px]"
         }`}
       >
-        <div
+        <h1
           className={`lg:p-0 text-light text-[32px] mb-[24px] md:text-[48px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full${
             imageSrcset ? " md:mb-[32px]" : " md:mb-[24px]"
           }`}
         >
           {title}
-        </div>
+        </h1>
         <div className="text-light text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px]">
           {children}
         </div>

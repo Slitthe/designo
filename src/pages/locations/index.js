@@ -1,17 +1,12 @@
-// import { locations } from "@/lib/data";
 import FooterCard from "@/components/FooterCard/FooterCard";
-import { useEffect, useRef } from "react";
-// import MapCard from "@/components/MapCard/MapCard";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { locations } from "@/lib/data";
-// import MapCard from "@/components/MapCard/MapCard";
 
 const MapCard = dynamic(() => import("../../components/MapCard/MapCard"), {
   ssr: false,
 });
 
-// TODO: check if correct responsive images are used for the location cards
 export default function Locations() {
   return (
     <>
@@ -35,9 +30,9 @@ export default function Locations() {
                   <MapCard coordinates={location.coordinates} />
                 </div>
                 <div className="bg-threeCircles bg-cover md:bg-twoCircles col-span-2 py-[80px] px-small md:py-[96px] lg:w-full md:px-[75px] lg:pl-[96px] md:text-left md:min-h-[326px] min-h-[320px] bg-primary-light text-center flex flex-col justify-center text-dark-faded text-[15px] font-[400] leading-[25px] gap-standard md:rounded-standard">
-                  <div className="text-primary-dark text-[32px] font-[500] leading-[36px] md:text-[40px] md:leading-[48px]">
+                  <h2 className="text-primary-dark text-[32px] font-[500] leading-[36px] md:text-[40px] md:leading-[48px]">
                     {location.name}
-                  </div>
+                  </h2>
                   <div className="flex flex-col md:flex-row gap-[24px] md:gap-[30px] justify-between md:text-[16px] md:leading-[26px]">
                     <div className="flex-1">
                       <div className="font-[700]">{location.address.name}</div>

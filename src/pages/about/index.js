@@ -1,6 +1,5 @@
 import FooterCard from "@/components/FooterCard/FooterCard";
 
-import aboutHeroImg from "../../../public/about/desktop/image-about-hero.jpg";
 import HeaderCard from "@/components/HeaderCard/HeaderCard";
 import React from "react";
 import LocationInfoCards from "@/components/LocationInfoCards/LocationInfoCards";
@@ -69,9 +68,9 @@ export default function About() {
             </picture>
           </div>
           <div className="bg-threeCircles bg-center bg-no-repeat md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6 lg:py-[154px] lg:mx-0 lg:px-[96px]">
-            <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
+            <h2 className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
               World-class talent
-            </div>
+            </h2>
             <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">
               We are a crew of strategists, problem-solvers, and technologists.
               Every design is thoughtfully crafted from concept to launch,
@@ -111,9 +110,9 @@ export default function About() {
             </picture>
           </div>
           <div className="bg-threeCircles bg-center bg-no-repeat md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6 lg:py-[154px] lg:mx-0 lg:px-[96px]">
-            <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
+            <h2 className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">
               The real deal
-            </div>
+            </h2>
             <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">
               As strategic partners in our clients’ businesses, we are ready to
               take on any challenge as our own. Solving real problems require
@@ -128,24 +127,6 @@ export default function About() {
               to take action and drive real results.
             </div>
           </div>
-          {/*<div className="md:mx-[60px] py-[80px] md:py-[64px] min-h-[325px] md:min-h[252px] flex flex-col align-center items-center justify-center px-small md:px-0 lg:col-span-6">*/}
-          {/*  <div className="lg:p-0 text-primary-dark text-[32px] mb-[24px] md:text-[40px] md:leading-[48px] font-[500] leading-[36px] md:px-[119px] w-full">*/}
-          {/*    The real deal*/}
-          {/*  </div>*/}
-          {/*  <div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px] mb-[24px]">*/}
-          {/*    As strategic partners in our clients’ businesses, we are ready to*/}
-          {/*    take on any challenge as our own. Solving real problems require*/}
-          {/*    empathy and collaboration, and we strive to bring a fresh*/}
-          {/*    perspective to every opportunity. We make design and technology more*/}
-          {/*    accessible and give you tools to measure success.*/}
-          {/*  </div>*/}
-
-          {/*<div className="text-dark-faded text-[15px] md:text-[16px] md:leading-[26px] font-[400] leading-[25px]">*/}
-          {/*  We are visual storytellers in appealing and captivating ways. By*/}
-          {/*  combining business and marketing strategies, we inspire audiences to*/}
-          {/*  take action and drive real results.*/}
-          {/*</div>*/}
-          {/*</div>*/}
         </div>
 
         <FooterCard />

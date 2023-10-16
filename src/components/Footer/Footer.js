@@ -10,7 +10,7 @@ import logoLight from "../../../public/logo-light.png";
 // 64 190
 function Footer({ isOverlapped = true }) {
   return (
-    <div
+    <footer
       className={` pb-[60px] md:pb-[80px] w-full bg-dark items-center flex flex-col${
         isOverlapped ? " mt-[-190px] md:mt-[-80px] lg:mt-[-74px]" : ""
       }`}
@@ -38,7 +38,7 @@ function Footer({ isOverlapped = true }) {
         </div>
         <div className="md:hidden bg-light opacity-10 h-[1px] my-[32px]"></div>
 
-        <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] md:gap-[42px] lg:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
+        <nav className="md:ml-auto flex flex-col md:flex-row items-center gap-[32px] md:gap-[42px] text-light text-[14px] font-normal tracking-[2px] leading-[14px] uppercase">
           <Link href={"/about"} className="hover:text-primary-dark">
             Our company
           </Link>
@@ -67,24 +67,24 @@ function Footer({ isOverlapped = true }) {
         </div>
 
         <div className="flex gap-[16px] items-center justify-center md:ml-auto md:items-end">
-          <a href="#" target={"_blank"}>
+          <a href="/" target={"_blank"}>
             <FbIcon className="fill-primary-dark hover:fill-light" />
           </a>
-          <a href="#" target={"_blank"}>
+          <a href="/" target={"_blank"}>
             <YoutubeIcon className="fill-primary-dark hover:fill-light" />
           </a>
-          <a href="#" target={"_blank"}>
+          <a href="/" target={"_blank"}>
             <TwitterIcon className="fill-primary-dark hover:fill-light" />
           </a>
-          <a href="#" target={"_blank"}>
+          <a href="/" target={"_blank"}>
             <PinterestIcon className="fill-primary-dark hover:fill-light" />
           </a>
-          <a href="#" target={"_blank"}>
+          <a href="/" target={"_blank"}>
             <InstagramIcon className="fill-primary-dark hover:fill-light" />
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

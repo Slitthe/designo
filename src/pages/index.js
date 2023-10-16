@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import webDesignImg from "../../public/web-design/image-web-design-small.jpg";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import ResourcefulInfoCardImg from "../../public/illustration-resourceful.svg";
 import FriendlyInfoCardImg from "../../public/illustration-friendly.svg";
@@ -11,8 +10,6 @@ import { projects } from "@/lib/data";
 import Link from "next/link";
 import Head from "next/head";
 import classes from "./Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const projectCards = (
@@ -65,14 +62,14 @@ export default function Home() {
       <Head>
         <title>Designo</title>
       </Head>
-      <main className="max-w-container mx-auto relative overflow-hidden">
+      <div className="max-w-container mx-auto relative overflow-hidden">
         <HomeHeaderCard />
         {projectCards}
         {infoCards}
         <div className="mt-[120px] md:mt-[68px]">
           <FooterCard />
         </div>
-      </main>
+      </div>
     </div>
   );
 }

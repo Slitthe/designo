@@ -10,9 +10,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <div className="pt-[96px]">
+      <main className="pt-[96px]">
         <Component {...pageProps} />
-      </div>
+      </main>
       <Footer
         isOverlapped={!pathsForNormalFooter.includes(location.pathname)}
       />

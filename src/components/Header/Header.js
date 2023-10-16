@@ -4,12 +4,9 @@ import HamburgerCloseIcon from "../../../public/hamburger_close.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useOutsideAlerter } from "@/hooks/useOutsideAlerter";
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../../tailwind.config";
-import { useMediaQueryMinWidth } from "@/hooks/useMediaQueryMinWidth";
 import logoDark from "../../../public/logo-dark.png";
 
-function Header({ children }) {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const headerRef = useRef(null);
@@ -23,7 +20,7 @@ function Header({ children }) {
 
   const toggleOpen = () => setIsOpen((prevOpen) => !prevOpen);
   return (
-    <div className="w-full bg-light fixed z-30 left:0 right: 0 h-[96px]">
+    <header className="w-full bg-light fixed z-30 left:0 right: 0 h-[96px]">
       <div ref={headerRef} className="flex justify-center">
         <nav className="bg-light md:max-w-container flex flex-wrap top-0 w-full h-[96px] items-center fixed z-30 px-small md:px-standard">
           <Link
@@ -31,17 +28,9 @@ function Header({ children }) {
             className="flex items-center text-dark-faded hover:text-primary-dark"
           >
             <img src={logoDark.src} className="h-[24px]" />
-            {/*<img*/}
-            {/*  className="mr-[16px]"*/}
-            {/*  src={"/header_icon.png"}*/}
-            {/*  alt={"Header image, semi-filled circle"}*/}
-            {/*/>*/}
-            {/*<div className="tracking-[5px] uppercase font-bold text-[24px] ">*/}
-            {/*  Designo*/}
-            {/*</div>*/}
           </Link>
 
-          <div className="uppercase hidden md:flex ml-auto gap-[42px] text-dark-faded text-[14px] font-normal leading-[14px] tracking-[2px]">
+          <div className="uppercase hidden md:flex ml-auto gap-large text-dark-faded text-[14px] font-normal leading-[14px] tracking-[2px]">
             <Link
               className={`hover:text-primary-dark${
                 router.pathname === "/about" ? " text-primary-dark" : ""
@@ -106,7 +95,7 @@ function Header({ children }) {
       {isOpen && (
         <div className="z-20 md:hidden fixed inset-0 bg-black opacity-50 top-[96px]"></div>
       )}
-    </div>
+    </header>
   );
 }
 
